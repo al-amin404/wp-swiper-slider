@@ -30,9 +30,9 @@ class WSS_HERO_SLIDER{
         $output .= '<div class="swiper-wrapper">';
         $output .= do_shortcode($content);
          // Optional navigation & pagination
-        $output .= '<div class="swiper-button-next"></div>';
-        $output .= '<div class="swiper-button-prev"></div>';
-        $output .= '<div class="swiper-pagination"></div>';
+        // $output .= '<div class="swiper-button-next"></div>';
+        // $output .= '<div class="swiper-button-prev"></div>';
+        // $output .= '<div class="swiper-pagination"></div>';
         $output .= '</div>';
 
 
