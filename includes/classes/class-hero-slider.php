@@ -32,8 +32,9 @@ class WSS_HERO_SLIDER{
          // Optional navigation & pagination
         // $output .= '<div class="swiper-button-next"></div>';
         // $output .= '<div class="swiper-button-prev"></div>';
-        // $output .= '<div class="swiper-pagination"></div>';
-        $output .= '</div></div>';
+        $output .= '</div>';
+        $output .= '<div class="swiper-pagination"></div>';
+        $output .= '</div>';
 
 
         return $output;

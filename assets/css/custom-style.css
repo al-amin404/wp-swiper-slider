@@ -1,12 +1,19 @@
 .swiper {
   width: 100%;
   max-width: 1280px;
+  aspect-ratio: 16/9;
 }
 
 .swiper-slide {
   background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
