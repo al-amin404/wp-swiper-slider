@@ -10,12 +10,12 @@ class WSS_HERO_SLIDER{
 
     public function wss_enqueue_slider_assets() {
         // Swiper CDN
-        wp_enqueue_style('wss_swiper_slider_css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-        wp_enqueue_script('wss_swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], '1.0.0', true);
+        wp_enqueue_style('wss_swiper_slider_css',plugin_dir_url(dirname(__DIR__)). 'assets/swiper/swiper-bundle.min.css');
+        wp_enqueue_script('wss_swiper_js', plugin_dir_url(dirname(__DIR__)). 'assets/swiper/swiper-bundle.min.js', [], '1.0.0', true);
 
         // enqueue custom css & js
-        wp_enqueue_style('wss_slider_custom_style', plugin_dir_url(__FILE__). '../css/custom-style.css');
-        wp_enqueue_script('wss_slider_custom_js', plugin_dir_url(__FILE__). '../js/custom.js', [], '1.0.0', true);
+        wp_enqueue_style('wss_slider_custom_style', plugin_dir_url(dirname(__DIR__)). 'assets/css/custom-style.css');
+        wp_enqueue_script('wss_slider_custom_js', plugin_dir_url(dirname(__DIR__)). 'assets/js/custom.js', [], '1.0.0', true);
     }
 
     
@@ -33,7 +33,7 @@ class WSS_HERO_SLIDER{
         // $output .= '<div class="swiper-button-next"></div>';
         // $output .= '<div class="swiper-button-prev"></div>';
         // $output .= '<div class="swiper-pagination"></div>';
-        $output .= '</div>';
+        $output .= '</div></div>';
 
 
         return $output;
